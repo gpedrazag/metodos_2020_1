@@ -40,7 +40,7 @@ public class StudentServlet extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             String studentIdStr= request.getParameter("studentId");
             int studentId=0;
-            //if (studentIdStr==null && !studentIdStr.equals(""))
+            if (studentIdStr==null && !studentIdStr.equals(""))
                 studentId=Integer.parseInt(studentIdStr);
             String firstName = request.getParameter("firstName");
             String lastName = request.getParameter("lastName");
